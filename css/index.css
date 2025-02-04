@@ -1,0 +1,131 @@
+html
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body
+{
+    margin: 0;
+}
+.space-x
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.viewport header
+{
+    background-color: #dbdbdb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.viewport header .menu
+{
+    display: none;
+}
+header .header-left
+{
+    display: flex;
+    align-items: center;
+}
+header h3
+{
+    margin: 0;
+}
+header .search
+{
+    position: relative;
+}
+header .search input[type="search"]
+{
+    width: 400px;
+    height: 40px;
+    border-radius: 22px;
+    background-color: rgb(253, 233, 253);
+    outline: none;
+    border: none;
+    padding: 10px;
+    padding-left: 40px;
+}
+header .header-left > div
+{
+    margin-left: 20px;
+}
+header .search .search-icon
+{
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .theme-toggle
+{
+    min-height: 40px;
+    background-color: rgb(253, 233, 253);
+    display: flex;
+    align-items: center;
+    border-radius: 22px;
+    padding: 0px 10px;
+    color: #d8d8d8;
+}
+header .theme-toggle .toggle-switch
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffa500;
+    border: 10px solid #fff;
+}
+header .theme-toggle .icon-wrapper
+{
+    margin-left: 10px;
+}
+header .theme-toggle .icon-wrapper .dark-mode
+{
+    display: none;
+}
+header .notif
+{
+    background-color: rgb(253, 233, 253);
+    border-radius: 50%;
+    padding: 10px 12px;
+    color: #d8d8d8;
+}
+header .profile
+{
+    display: flex;
+    align-items: center;
+}
+header .profile .profile-pic
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+header .profile .name
+{
+    font-weight: 700;
+    margin-left: 10px;
+}
+.viewport main
+{
+    background-color: orange;
+}
+.viewport .sidenav
+{
+    background-color: blue;
+}
+
+@media screen and (max-width: 400px) 
+{
+    .viewport header
+    {
+        background-color: green;
+    }
+    .viewport header .menu
+    {
+        display: inline-block;
+    }
+}
