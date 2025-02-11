@@ -1,3 +1,8 @@
+:root {
+    --bgColor: #eff3f4;
+    --accentColor: #edeff0;
+    --primaryColor: #90a6fa;
+}
 html
 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -13,7 +18,7 @@ body
 }
 .viewport header
 {
-    background-color: #dbdbdb;
+    background-color: var(--bgColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +47,7 @@ header .search input[type="search"]
     width: 400px;
     height: 40px;
     border-radius: 22px;
-    background-color: rgb(253, 233, 253);
+    background-color: var(--accentColor);
     outline: none;
     border: none;
     padding: 10px;
@@ -63,7 +68,7 @@ header .search .search-icon
 header .theme-toggle
 {
     min-height: 40px;
-    background-color: rgb(253, 233, 253);
+    background-color: var(--accentColor);
     display: flex;
     align-items: center;
     border-radius: 22px;
@@ -88,7 +93,7 @@ header .theme-toggle .icon-wrapper .dark-mode
 }
 header .notif
 {
-    background-color: rgb(253, 233, 253);
+    background-color: var(--accentColor);
     border-radius: 50%;
     padding: 10px 12px;
     color: #d8d8d8;
@@ -111,11 +116,27 @@ header .profile .name
 }
 .viewport main
 {
-    background-color: orange;
+    background-color: var(--bgColor);
+    min-height: calc(100vh - 100px);
 }
 .viewport .sidenav
 {
-    background-color: blue;
+    background-color: rgba(20,20,20,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+}
+.viewport .sidenav .inner-nav
+{
+    width: 250px;
+    background-color: #fff;
+    height: inherit;
+}
+.viewport main, .viewport header
+{
+    margin-left: 250px;
 }
 
 @media screen and (max-width: 400px) 
